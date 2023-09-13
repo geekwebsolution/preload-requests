@@ -4,8 +4,8 @@ Donate link: https://paypal.me/rvadhel
 Tags: preload fonts, preload images, preload css, preload javascript, preload, optimize page speed, preload video
 Requires PHP: 5.2.4
 Requires at least: 3.0.1
-Tested up to: 6.2.2
-Stable tag: 1.3
+Tested up to: 6.3.1
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,9 @@ After active plugin go to Preload Requests.
 
 
 == Changelog ==
+= 1.4 =
+ Fixed Bugs
+
 = 1.3 =
  Tested up to wp version 6.2.2
 

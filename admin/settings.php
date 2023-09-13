@@ -279,6 +279,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
             ?>
                 <textarea class="large-text" rows="10" name="gclpr_options[gclpr_font_options][<?php esc_attr_e( $args['label_for'] ); ?>]" id="<?php esc_attr_e( $args['label_for'] ); ?>"><?php _e($value,'preload-requests'); ?></textarea><br>
                 <p><strong>Note: </strong><i>This Preloaded <strong>Fonts URL</strong> can be included in <strong>whole Website</strong>. Add <strong>Font URL per Line.</strong></i></p>
+                <p>Use  <code>{{site_url}}</code> for <code><?php echo esc_url(home_url()); ?></code></p>
             <?php 
         }
 
@@ -294,7 +295,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
                 </label>
             <?php
             } ?>
-                <p><strong>Note: </strong><i>Select <strong>Post Type</strong> for include <strong>Font URL</strong> Preload in <strong>Single Post</strong> Page. </i><code>ex: http://localhost/insert-scripts/wp-content/themes/twentytwentyone/assets/fonts/demo.{font type}</code></p>
+                <p><strong>Note: </strong><i>Select <strong>Post Type</strong> for include <strong>Font URL</strong> Preload in <strong>Single Post</strong> Page. </i><code>ex: <?php echo esc_url(home_url()); ?>/wp-content/themes/twentytwentyone/assets/fonts/demo.{font type}</code></p>
             <?php
         }
 
@@ -305,6 +306,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
             ?>
                 <textarea class="large-text" rows="10" name="gclpr_options[gclpr_style_options][<?php esc_attr_e( $args['label_for'] ); ?>]" id="<?php esc_attr_e( $args['label_for'] ); ?>"><?php _e($value,'preload-requests'); ?></textarea><br>
                 <p><strong>Note: </strong><i>This Preloaded <strong>Styles URL</strong> can be included in <strong>whole website</strong>. Add <strong>Style URL per Line.</strong></i></p>
+                <p>Use  <code>{{site_url}}</code> for <code><?php echo esc_url(home_url()); ?></code></p>
             <?php
         }
 
@@ -320,7 +322,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
                 </label>
             <?php
             } ?>
-            <p><strong>Note: </strong><i>Select <strong>Post Type</strong> for include <strong>Style URL</strong> Preload in <strong>Single Post</strong> Page. </i><code>ex: http://localhost/insert-scripts/wp-content/themes/twentytwentyone/assets/css/demo.css</code></p>
+            <p><strong>Note: </strong><i>Select <strong>Post Type</strong> for include <strong>Style URL</strong> Preload in <strong>Single Post</strong> Page. </i><code>ex: <?php echo esc_url(home_url()); ?>/wp-content/themes/twentytwentyone/assets/css/demo.css</code></p>
         <?php
         }
 
@@ -331,6 +333,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
             ?>
                 <textarea class="large-text" rows="10" name="gclpr_options[gclpr_script_options][<?php esc_attr_e( $args['label_for'] ); ?>]" id="<?php esc_attr_e( $args['label_for'] ); ?>"><?php _e($value,'preload-requests'); ?></textarea><br>
                 <p><strong>Note: </strong><i>This Preloaded <strong>Scripts URL</strong> can be included in <strong>whole website</strong>. Add <strong>Script URL per Line.</strong></i></p>
+                <p>Use  <code>{{site_url}}</code> for <code><?php echo esc_url(home_url()); ?></code></p>
             <?php
         }
 
@@ -346,7 +349,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
                 </label>
             <?php
             } ?>
-            <p><strong>Note: </strong><i>Select <strong>Post Type</strong> for include <strong>Script URL</strong> Preload in <strong>Single Post</strong> Page. </i><code>ex: http://localhost/insert-scripts/wp-content/themes/twentytwentyone/assets/js/demo.js</code></p>
+            <p><strong>Note: </strong><i>Select <strong>Post Type</strong> for include <strong>Script URL</strong> Preload in <strong>Single Post</strong> Page. </i><code>ex: <?php echo esc_url(home_url()); ?>/wp-content/themes/twentytwentyone/assets/js/demo.js</code></p>
         <?php
         }
 
@@ -357,6 +360,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
             ?>
                 <textarea class="large-text" rows="10" name="gclpr_options[gclpr_image_options][<?php esc_attr_e( $args['label_for'] ); ?>]" id="<?php esc_attr_e( $args['label_for'] ); ?>"><?php _e($value,'preload-requests'); ?></textarea><br>
                 <p><strong>Note: </strong><i>This Preloaded <strong>Images URL</strong> can be included in <strong>whole website</strong>. Add <strong>Image URL per Line.</strong></i></p>
+                <p>Use  <code>{{site_url}}</code> for <code><?php echo esc_url(home_url()); ?></code></p>
             <?php
         }
 
@@ -383,6 +387,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
             ?>
                 <textarea class="large-text" rows="10" name="gclpr_options[gclpr_video_options][<?php esc_attr_e( $args['label_for'] ); ?>]" id="<?php esc_attr_e( $args['label_for'] ); ?>"><?php _e($value,'preload-requests'); ?></textarea><br>
                 <p><strong>Note: </strong><i>This preloaded <strong>Videos URL</strong> can be included in <strong>whole website</strong>. Add <strong>Video URL per line.</strong></i></p>
+                <p>Use  <code>{{site_url}}</code> for <code><?php echo esc_url(home_url()); ?></code></p>
             <?php
         }
 
@@ -398,7 +403,7 @@ if (!class_exists('gclpr_preload_requests_settings')) {
                 </label>
             <?php
             } ?>
-            <p><strong>Note: </strong><i>Select <strong>Post Type</strong> for include <strong>Video URL</strong> Preload in <strong>Single Post</strong> Page. </i><code>ex: http://localhost/insert-scripts/wp-content/themes/twentytwentyone/assets/video/demo.{video type}</code></p>
+            <p><strong>Note: </strong><i>Select <strong>Post Type</strong> for include <strong>Video URL</strong> Preload in <strong>Single Post</strong> Page. </i><code>ex: <?php echo esc_url(home_url()); ?>/wp-content/themes/twentytwentyone/assets/video/demo.{video type}</code></p>
         <?php
         }
     }
