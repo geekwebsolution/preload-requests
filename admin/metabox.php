@@ -256,11 +256,11 @@ if(!class_exists('gclpr_prelaod_requests_meta')) {
 
             $gclpr = array();
             $reg_exp = "/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/";
-            $gclpr['gclpr_font_urls'] = preg_replace($reg_exp, "\n", $gclpr_font_urls);
-            $gclpr['gclpr_style_urls'] = preg_replace($reg_exp, "\n", $gclpr_style_urls);
-            $gclpr['gclpr_script_urls'] = preg_replace($reg_exp, "\n", $gclpr_script_urls);
-            $gclpr['gclpr_image_urls'] = preg_replace($reg_exp, "\n", $gclpr_image_urls);
-            $gclpr['gclpr_video_urls'] = preg_replace($reg_exp, "\n", $gclpr_video_urls);
+            if(isset($_POST['gclpr_font_urls']))     $gclpr['gclpr_font_urls'] = preg_replace($reg_exp, "\n", $gclpr_font_urls);
+            if(isset($_POST['gclpr_style_urls']))    $gclpr['gclpr_style_urls'] = preg_replace($reg_exp, "\n", $gclpr_style_urls);
+            if(isset($_POST['gclpr_script_urls']))   $gclpr['gclpr_script_urls'] = preg_replace($reg_exp, "\n", $gclpr_script_urls);
+            if(isset($_POST['gclpr_image_urls']))    $gclpr['gclpr_image_urls'] = preg_replace($reg_exp, "\n", $gclpr_image_urls);
+            if(isset($_POST['gclpr_video_urls']))    $gclpr['gclpr_video_urls'] = preg_replace($reg_exp, "\n", $gclpr_video_urls);
 
             if(isset($gclpr) && !empty($gclpr)) {
                 update_post_meta($post_id, 'gclpr_preload_meta', $gclpr);
