@@ -1,11 +1,11 @@
 <?php
 /*
-    Plugin Name: Preload Requests 
-    Description: Plugin Provide you to Add preload links to your website easily, compatible with all major browsers. It will improve your site SEO score.
-    Author: Geek Code Lab
-    Version: 1.5
-    Author URI: https://geekcodelab.com/
-    Text Domain: preload-requests
+ Plugin Name: Preload Requests 
+ Description: Plugin Provide you to Add preload links to your website easily, compatible with all major browsers. It will improve your site SEO score.
+ Author: Geek Code Lab
+ Version: 1.6
+ Author URI: https://geekcodelab.com/
+ Text Domain: preload-requests
 */
 
 if( !defined( 'ABSPATH' ) ) exit;
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Invalid request.' );
 }
 
-define("GCLPR_BUILD",1.5);
+define("GCLPR_BUILD",1.6);
 
 if(!defined("GCLPR_PLUGIN_DIR_PATH"))
 	define("GCLPR_PLUGIN_DIR_PATH", plugin_dir_path(__FILE__));	

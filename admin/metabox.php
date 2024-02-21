@@ -35,7 +35,7 @@ if(!class_exists('gclpr_prelaod_requests_meta')) {
                 if(isset($fonts_urls) && !empty($fonts_urls) && is_array($font_post_types_list) && in_array($cur_post,$font_post_types_list)) {
                     foreach($fonts_urls as $font_urls) {
                         $file_info = pathinfo($font_urls);
-                        $file_ext = $file_info['extension'];
+                        $file_ext = (isset($file_info['extension']) && !empty($file_info['extension'])) ? $file_info['extension'] : '';
                         if(!empty($font_urls) && !empty($file_ext)) {
                         ?><link rel="preload" href="<?php echo esc_url($font_urls); ?>" as="font" type="font/<?php esc_attr_e($file_ext); ?>" crossorigin /><?php printf("\n"); ?><?php
                         }
@@ -80,7 +80,7 @@ if(!class_exists('gclpr_prelaod_requests_meta')) {
                 if(isset($images_urls) && !empty($images_urls) && is_array($image_post_types_list) && in_array($cur_post,$image_post_types_list)) {
                     foreach($images_urls as $image_urls) {    
                         $file_info = pathinfo($image_urls);
-                        $file_ext = $file_info['extension'];
+                        $file_ext = (isset($file_info['extension']) && !empty($file_info['extension'])) ? $file_info['extension'] : '';
                         if(!empty($image_urls) && !empty($file_ext)) { 
                         ?><link rel="preload" href="<?php echo esc_url($image_urls); ?>" as="image" type="image/<?php esc_attr_e($file_ext); ?>" crossorigin><?php printf("\n"); ?><?php
                         }
@@ -96,7 +96,7 @@ if(!class_exists('gclpr_prelaod_requests_meta')) {
                 if(isset($videos_urls) && !empty($videos_urls) && is_array($video_post_types_list) && in_array($cur_post,$video_post_types_list)) {
                     foreach($videos_urls as $video_urls) {    
                         $file_info = pathinfo($video_urls);
-                        $file_ext = $file_info['extension'];
+                        $file_ext = (isset($file_info['extension']) && !empty($file_info['extension'])) ? $file_info['extension'] : '';
                         if(!empty($video_urls) && !empty($file_ext)) { 
                         ?><link rel="preload" href="<?php echo esc_url($video_urls); ?>" as="video" type="video/<?php esc_attr_e($file_ext); ?>" crossorigin><?php printf("\n"); ?><?php
                         }
