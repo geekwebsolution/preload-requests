@@ -1,7 +1,7 @@
 === Preload Requests === 
 Contributors: rajkakadiya, rvadhel
 Donate link: https://paypal.me/rvadhel
-Tags: preload fonts, preload images, preload css, preload javascript, preload, optimize page speed, preload video
+Tags: preload fonts, preload images, preload css, preload javascript, preload video
 Requires PHP: 7.4
 Requires at least: 6.3
 Tested up to: 6.4.1
