@@ -57,6 +57,11 @@ After active plugin go to Preload Requests.
 
 
 == Changelog ==
+
+= 1.7 =
+ Fix Bug
+ Added auto updated function
+ 
 = 1.6 =
  Fixed bugs
 
