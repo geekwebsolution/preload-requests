@@ -31,6 +31,7 @@ require_once( GCLPR_PLUGIN_DIR_PATH .'admin/metabox.php');
 require_once( GCLPR_PLUGIN_DIR_PATH .'admin/settings.php');
 require(GCLPR_PLUGIN_DIR_PATH . 'updater/updater.php');
 
+register_activation_hook(__FILE__, 'gclpr_updater_activate');
 add_action('upgrader_process_complete', 'gclpr_updater_activate'); // remove  transient  on plugin  update
 
 

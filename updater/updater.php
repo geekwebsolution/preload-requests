@@ -19,7 +19,6 @@ function gclpr_updater_utility() {
     return $settings;
 }
 
-register_activation_hook(__FILE__, 'gclpr_updater_activate');
 function gclpr_updater_activate() {
 
     // Refresh transients
